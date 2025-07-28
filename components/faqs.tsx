@@ -3,40 +3,41 @@ import Accordion from "@/components/accordion";
 export default function Faqs() {
   const faqs = [
     {
-      question: "How is Simple different from Complex?",
+      question:
+        "What’s the difference between frontend and backend development?",
       answer:
-        "Simple is designed to be user-friendly and intuitive, while Complex is more robust and feature-rich. Both tools are great for creating websites, but Simple is ideal for beginners and small businesses, while Complex is better suited for larger organizations and developers.",
-    },
-    {
-      question: "Can I cancel my plan at any time?",
-      answer:
-        "Yes, but you'll still pay the remainder of the term for the plan you signed up for.",
+        "Frontend development involves everything users see and interact with in a browser—HTML, CSS, and JavaScript frameworks like React or Vue. Backend development manages server-side logic, APIs, authentication, and databases using technologies such as Node.js, Express, or Python.",
       active: true,
     },
     {
-      question: "Can I cancel my workspace plan at any time?",
+      question: "Which frontend framework should I learn first?",
       answer:
-        "Yes, but you'll still pay the remainder of the term for the plan you signed up for.",
+        "React is a strong first choice due to its demand in the job market and component-based design. Vue is also a great option—especially for beginners—because of its simplicity and rapid learning curve. Frame101 helps you explore both.",
     },
     {
-      question: "What kind of support does Simple provide?",
+      question: "What is Express.js used for in backend development?",
       answer:
-        "Support is available 24/7 via email, chat, and phone. We're here to help you with any questions or concerns you may have.",
+        "Express is a minimalist web framework for Node.js. It streamlines the process of building APIs, handling routes, and integrating middleware. It's ideal for scalable backend apps and RESTful services.",
     },
     {
-      question: "Can my clients or coworkers upload their own content?",
+      question: "Should I learn both frontend and backend?",
       answer:
-        "Yes! You can invite clients or coworkers to collaborate on your projects, and they can upload their own content.",
+        "If you're aiming to become a full-stack developer, yes. But it's fine to start with one. Frontend suits those who enjoy UI/UX, while backend fits problem-solvers who enjoy logic, data, and infrastructure.",
     },
     {
-      question: "How much traffic can Simple hosting handle?",
+      question: "How do frontend and backend communicate?",
       answer:
-        "Our hosting plans are designed to handle high traffic volumes, so you can rest assured that your site will perform well under pressure.",
+        "Typically through HTTP requests and APIs. Frontend apps make API calls to the backend, which processes the request and returns data—usually in JSON format. REST and GraphQL are common methods.",
     },
     {
-      question: "Are Simple websites SEO-friendly?",
+      question: "Why is Next.js popular among developers?",
       answer:
-        "Yes! Simple websites are designed with SEO in mind, so you can easily optimize your site for search engines.",
+        "Next.js builds on React by adding features like file-based routing, server-side rendering (SSR), static site generation (SSG), and backend API routes—all in one framework. It’s ideal for modern full-stack apps.",
+    },
+    {
+      question: "Which database is best for beginners?",
+      answer:
+        "MongoDB is beginner-friendly and pairs well with JavaScript and Node.js. It uses a flexible, JSON-like format that's easy to learn. For relational data, PostgreSQL is another great option.",
     },
   ];
 
@@ -46,7 +47,7 @@ export default function Faqs() {
         <div className="pb-12 md:pb-20">
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
             <h2 className="text-3xl font-bold md:text-4xl">
-              Questions we often get
+              Frequently Asked Questions
             </h2>
           </div>
           <div className="mx-auto max-w-3xl">

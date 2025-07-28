@@ -1,0 +1,89 @@
+---
+title: "Backend Frameworks"
+publishedAt: "2025-07-20"
+updatedAt: "2025-07-20"
+summary: "This section introduces the backend frameworks used in the project—Express.js and Node.js—along with their roles, features, and integration strategies."
+kind: "detailed"
+---
+
+## What Is a Backend Framework?
+
+A backend framework runs on the server and handles core tasks such as:
+
+- Managing routes and handling requests  
+- Sending data to and from the frontend  
+- Performing server-side logic  
+- Controlling application flow behind the scenes
+
+In this project, we use:
+
+- **Node.js** – the runtime that executes JavaScript on the server  
+- **Express.js** – a minimalist framework for routing and middleware
+
+---
+
+## Node.js
+
+### What is Node.js?
+
+Node.js is a **JavaScript runtime** built on Chrome's V8 engine. It allows developers to run JavaScript code outside the browser — perfect for server-side apps.
+
+### Key Features
+
+- Fast and event-driven
+- Asynchronous and non-blocking
+- Uses JavaScript everywhere (frontend + backend)
+- Ideal for lightweight backend services
+
+[Node.js Docs →](https://nodejs.org/en/docs)
+
+---
+
+## Express.js
+
+### What is Express?
+
+Express.js is a **minimal web framework for Node.js** that makes it easy to define server routes and logic.
+
+### Key Features
+
+- Route-based architecture (`GET`, `POST`, `PUT`, `DELETE`)
+- Support for middleware (e.g., logging, error handling)
+- Easily connects to frontend via JSON APIs
+- Simple syntax, fast to set up
+
+[Express.js Docs →](https://expressjs.com/)
+
+---
+
+## Implementation Notes
+
+- The backend is powered by **Node.js** with **Express.js** for routing
+- Routes are created for key endpoints (e.g., `/api/lessons`)
+- Middleware is used to handle logging, parsing, and error handling
+- Project structure separates routes, controllers, and configuration files
+
+<Banner title="Looking to build a solid server setup?">
+  We’ve included a simple Express.js boilerplate to help you get started.
+  It includes example routes, middleware, and comments to guide your learning process.
+</Banner>
+
+---
+
+## External Learning Resources
+
+- [Node.js Getting Started](https://nodejs.dev/en/learn)
+- [Express.js Guide (MDN)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)
+- [Official Express Documentation](https://expressjs.com/)
+
+---
+
+## Summary
+
+This section focuses on how **Node.js** and **Express.js** work together to power the backend of our educational platform. You’ll learn:
+
+- What backend frameworks do  
+- How to structure a simple server  
+- How Express routes handle frontend requests  
+
+> Frame101 uses this lightweight setup to handle core functionality without unnecessary complexity — perfect for beginner developers building full-stack learning tools.

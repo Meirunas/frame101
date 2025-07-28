@@ -1,0 +1,70 @@
+---
+title: "Deployment"
+publishedAt: "2025-07-21"
+updatedAt: "2025-07-21"
+summary: "This guide shares notes and suggestions for deploying Frame101 projects, with Vercel recommended as the preferred platform for full-stack deployments."
+kind: "frame101"
+---
+
+To share your Frame101 projects with the world — whether they're interactive lessons, admin tools, or full learning modules — it's important to ensure they are deployed in a clean, reliable, and scalable way.
+
+This page contains notes and deployment suggestions. While I don't provide a full deployment tutorial here, the information below should help others successfully publish their own Frame101 projects.
+
+---
+
+## Focus on Design and Integration
+
+To create experiences that enhance learning and usability:
+
+- Use **user-centered design**
+- Keep your layout **clear and consistent**
+- Apply effective **color and typography**
+- Ensure components integrate **seamlessly with Frame101**
+
+If you're building for the Frame101 ecosystem or planning to share your tool, please review the [Contributor Design Guidelines](#) for expectations around accessibility and user flow.
+
+---
+
+## Recommended Deployment Platform: Vercel
+
+Vercel is my **recommended platform for deploying full-stack Frame101 projects**. It supports both front-end and backend/serverless functionality and is especially well-suited for Vue.js, React, and Vite projects.
+
+You can think of it like **Netflix for developers** — you push your code and it’s automatically deployed, fast and optimized.
+
+### Why I Recommend Vercel:
+
+- **Zero-config** setup (especially for Vite, Vue, and React)
+- **Built-in backend support** via serverless functions
+- **Global CDN** for fast delivery
+- **Simple environment variable management**
+- **Automatic deployments from GitHub**
+
+> Other options like Netlify or Firebase can be used for static front-end projects, but they offer limited support for backend/serverless features compared to Vercel.
+
+---
+
+## Deployment Notes
+
+Here are general notes for deploying Frame101-based projects (not step-by-step):
+
+- Run `npm install` and `npm run build` to make sure your project compiles locally
+- If using Vite, ensure the output folder is `dist`
+- Push your project to GitHub so it can be imported into Vercel
+- In Vercel, configure:
+  - Build command: `npm run build`
+  - Output directory: `dist`
+  - Environment variables (e.g. `VITE_API_URL`, `VITE_PUBLIC_KEY`)
+- Vercel automatically sets up deployment previews for each push
+- Backend routes (if present) can be created in `api/` using serverless functions
+
+---
+
+## Summary
+
+- This doc provides **notes only**, not a step-by-step guide
+- Use **Vercel** for best results, especially for full-stack or dynamic apps
+- Netlify is okay for static-only projects
+- Always test build locally before pushing
+- Configure your `.env` files securely for both local and production environments
+
+> Feel free to adapt or expand on this based on your specific use case and stack.

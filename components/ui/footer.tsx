@@ -7,189 +7,77 @@ export default function Footer({ border = false }: { border?: boolean }) {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Top area: Blocks */}
         <div
-          className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12 ${border ? "border-t [border-image:linear-gradient(to_right,transparent,var(--color-slate-200),transparent)1]" : ""}`}
+          className={`flex flex-col gap-8 py-8 md:flex-row md:justify-between md:items-start md:py-12 ${
+            border
+              ? "border-t [border-image:linear-gradient(to_right,transparent,var(--color-slate-200),transparent)1]"
+              : ""
+          }`}
         >
-          {/* 1st block */}
-          <div className="space-y-2 sm:col-span-12 lg:col-span-4">
-            <div>
-              <Logo />
-            </div>
+          {/* Left block */}
+          <div className="space-y-2">
+            <Logo />
             <div className="text-sm text-gray-600">
-              &copy; Cruip.com - All rights reserved.
+              &copy; Frame101 - All rights reserved.
             </div>
           </div>
 
-          {/* 2nd block */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Product</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Integrations
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Pricing & Plans
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Changelog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Our method
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* 3rd block */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Company</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  About us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Diversity & Inclusion
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Financial statements
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* 4th block */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Resources</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Community
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Terms of service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Report a vulnerability
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* 5th block */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
+          {/* Right block */}
+          <div className="space-y-2">
             <h3 className="text-sm font-medium">Social</h3>
-            <ul className="flex gap-1">
+            <ul className="flex gap-2">
+              {/* LinkedIn */}
               <li>
                 <Link
+                  href="https://www.linkedin.com/in/meirunas/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
                   className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
-                  href="#0"
-                  aria-label="Twitter"
                 >
                   <svg
-                    className="h-8 w-8 fill-current"
+                    className="h-5 w-5 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z"></path>
+                    <path d="M12 12h5.535v2.337h.079c.771-1.378 2.654-2.831 5.466-2.831 5.847 0 6.92 3.65 6.92 8.395V28h-5.78v-7.682c0-1.833-.035-4.196-2.557-4.196-2.566 0-2.96 1.985-2.96 4.055V28H12V12zm-6.4 0H1.6V28h4V12zM4.8 4a2.4 2.4 0 110 4.8A2.4 2.4 0 014.8 4z" />
                   </svg>
                 </Link>
               </li>
+
+              {/* GitHub */}
               <li>
                 <Link
+                  href="https://github.com/meirunas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
                   className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
-                  href="#0"
-                  aria-label="Medium"
                 >
                   <svg
-                    className="h-8 w-8 fill-current"
+                    className="h-5 w-5 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M23 8H9a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1Zm-1.708 3.791-.858.823a.251.251 0 0 0-.1.241V18.9a.251.251 0 0 0 .1.241l.838.823v.181h-4.215v-.181l.868-.843c.085-.085.085-.11.085-.241v-4.887l-2.41 6.131h-.329l-2.81-6.13V18.1a.567.567 0 0 0 .156.472l1.129 1.37v.181h-3.2v-.181l1.129-1.37a.547.547 0 0 0 .146-.472v-4.749a.416.416 0 0 0-.138-.351l-1-1.209v-.181H13.8l2.4 5.283 2.122-5.283h2.971l-.001.181Z"></path>
+                    <path d="M16 2C8.28 2 2 8.28 2 16c0 6.16 3.975 11.385 9.475 13.225.693.127.948-.3.948-.668 0-.33-.012-1.204-.019-2.363-3.855.838-4.668-1.858-4.668-1.858-.63-1.6-1.54-2.026-1.54-2.026-1.26-.86.096-.843.096-.843 1.396.099 2.13 1.433 2.13 1.433 1.237 2.12 3.244 1.507 4.037 1.152.126-.896.485-1.507.882-1.854-3.08-.35-6.318-1.54-6.318-6.852 0-1.513.543-2.75 1.432-3.718-.144-.352-.621-1.77.137-3.69 0 0 1.167-.374 3.825 1.42a13.31 13.31 0 013.486-.468c1.183.005 2.376.16 3.486.468 2.655-1.794 3.82-1.42 3.82-1.42.76 1.92.283 3.338.14 3.69.892.968 1.43 2.205 1.43 3.718 0 5.325-3.244 6.497-6.336 6.842.499.428.946 1.27.946 2.563 0 1.85-.018 3.34-.018 3.793 0 .372.25.802.957.665C26.03 27.38 30 22.157 30 16c0-7.72-6.28-14-14-14z" />
                   </svg>
                 </Link>
               </li>
+
+              {/* CodePen */}
               <li>
                 <Link
+                  href="https://codepen.io/meirunas_smitas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="CodePen"
                   className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
-                  href="#0"
-                  aria-label="Github"
                 >
                   <svg
-                    className="h-8 w-8 fill-current"
+                    className="h-5 w-5 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M16 8.2c-4.4 0-8 3.6-8 8 0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4V22c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.7 3.9.3.4.6.9.6 1.6v2.2c0 .2.1.5.6.4 3.2-1.1 5.5-4.1 5.5-7.6-.1-4.4-3.7-8-8.1-8z"></path>
+                    <path d="M30 10.7c0-.1 0-.1 0 0 0-.1 0-.1 0 0v-.1c0-.1 0-.2-.1-.3v-.1c0-.1-.1-.2-.2-.2 0-.1-.1-.1-.1-.2l-12-8c-.5-.3-1.1-.3-1.6 0l-12 8c-.1 0-.1.1-.2.2s-.1.2-.1.2c0 .1-.1.2-.1.3v.1c0 .1 0 .1 0 0s0 .1 0 0v10.7c0 .1 0 .1 0 0 0 .1 0 .1 0 0v.1c0 .1.1.2.1.3 0 .1.1.2.1.2 0 .1.1.1.2.2l12 8c.5.3 1.1.3 1.6 0l12-8c.1 0 .1-.1.2-.2s.1-.2.1-.2c0-.1.1-.2.1-.3v-.1c0-.1 0-.1 0 0V10.7zM16 4.5l9.6 6.4-4.3 2.8-5.3-3.5v-5.7zm-2 0v5.7l-5.3 3.5-4.3-2.8L14 4.5zM6.3 13.8L9.1 15.6l-2.8 1.8v-3.6zm9.7 13.7l-9.6-6.4 4.3-2.8 5.3 3.5v5.7zm1-7.3l-4.3-2.8 4.3-2.8 4.3 2.8-4.3 2.8zm1 7.3v-5.7l5.3-3.5 4.3 2.8-9.6 6.4zm10-7.3-2.8-1.8 2.8-1.8v3.6zm-3.4-5.6l-4.3-2.8 4.3-2.8 4.3 2.8-4.3 2.8z" />
                   </svg>
                 </Link>
               </li>
@@ -198,10 +86,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
         </div>
       </div>
 
-      {/* Big text */}
+      {/* Big text and glow effect */}
       <div className="relative -mt-16 h-60 w-full -z-10" aria-hidden="true">
-        <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[348px] font-bold leading-none before:bg-linear-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['Simple'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['Simple'] after:[text-shadow:0_1px_0_white]"></div>
-        {/* Glow */}
+        <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[348px] font-bold leading-none before:bg-gradient-to-b before:from-gray-200 before:to-gray-100/30 before:bg-clip-text before:text-transparent before:content-['Frame101'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['Frame101'] after:[text-shadow:0_1px_0_white]"></div>
         <div
           className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2/3"
           aria-hidden="true"

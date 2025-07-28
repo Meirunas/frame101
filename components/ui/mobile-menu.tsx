@@ -89,56 +89,38 @@ export default function MobileMenu() {
           <ul className="p-2 text-sm">
             <li>
               <Link
-                href="/pricing"
+                href="/"
                 className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
                 onClick={() => setMobileNavOpen(false)}
               >
-                Pricing
+                Home
               </Link>
             </li>
             <li>
               <Link
-                href="/customers"
+                href="/frameworks-guide"
                 className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
                 onClick={() => setMobileNavOpen(false)}
               >
-                Customers
+                Frameworks Guide
               </Link>
             </li>
             <li>
               <Link
-                href="/blog"
+                href="/reviews"
                 className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
                 onClick={() => setMobileNavOpen(false)}
               >
-                Blog
+                Reviews
               </Link>
             </li>
             <li>
               <Link
-                href="/documentation"
+                href="/docs"
                 className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
                 onClick={() => setMobileNavOpen(false)}
               >
                 Docs
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/support"
-                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
-                onClick={() => setMobileNavOpen(false)}
-              >
-                Support center
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/apps"
-                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
-                onClick={() => setMobileNavOpen(false)}
-              >
-                Apps
               </Link>
             </li>
           </ul>

@@ -3,46 +3,53 @@ import TestimonialImg01 from "@/public/images/testimonial-01.jpg";
 import TestimonialImg02 from "@/public/images/testimonial-02.jpg";
 import TestimonialImg03 from "@/public/images/testimonial-03.jpg";
 import TestimonialImg04 from "@/public/images/testimonial-04.jpg";
+import TestimonialImg05 from "@/public/images/testimonial-05.jpg";
+
 
 export default function TestimonialsCarousel() {
-  const testimonials = [
-    {
-      img: TestimonialImg01,
-      name: "Peter Lowe",
-      username: "@peterlowex",
-      date: "May 19, 2027",
-      content:
-        "As a founder, having a visually appealing and user-friendly website is essential. This tool not only helped me achieve that but also improved my site's performance and SEO.",
-      channel: "Twitter",
-    },
-    {
-      img: TestimonialImg02,
-      name: "Rodri Alba",
-      username: "@rodri_spn",
-      date: "Apr 12, 2027",
-      content:
-        "Simple has revolutionized the way I manage my work. Its intuitive interface and seamless functionality make staying organized effortless. I can't imagine my life without it.",
-      channel: "Twitter",
-    },
-    {
-      img: TestimonialImg03,
-      name: "Michele Lex",
-      username: "@MikyBrown",
-      date: "Mar 04, 2027",
-      content:
-        "I've tried several website builders before, but none were as user-friendly and versatile as this one. From design to functionality, it exceeded my expectations!",
-      channel: "Twitter",
-    },
-    {
-      img: TestimonialImg04,
-      name: "Michael Ross",
-      username: "@michjack",
-      date: "Jan 15, 2027",
-      content:
-        "Simple lives up to its name in every way. It's incredibly easy to use yet powerful enough to handle all my tasks effortlessly. It's become an essential part of my daily routine.",
-      channel: "Twitter",
-    },
-  ];
+const testimonials = [
+  {
+    img: TestimonialImg01,
+    name: "Sara McLean",
+    username: "@saramdesigns",
+    date: "Jul 20, 2025",
+    content:
+      "FRAME101 is a sleek, modern developer portfolio. Meirunas nailed the animations and responsive layout — highly recommended for anyone hiring front-end talent.",
+  },
+  {
+    img: TestimonialImg02,
+    name: "Lucas Tan",
+    username: "@lucast_dev",
+    date: "Jul 15, 2025",
+    content:
+      "The project pages are clean and professional. The stack icons, transitions, and layout really help your skills shine.",
+  },
+  {
+    img: TestimonialImg03,
+    name: "Jane Evans",
+    date: "Jul 08, 2025",
+    content:
+      "As a hiring manager, I see a lot of dev portfolios. FRAME101 stands out because it's fast, functional, and shows real UI care. Great first impression.",
+    rating: 5,
+  },
+  {
+    img: TestimonialImg04,
+    name: "Alex Gomes",
+    username: "@gomezui",
+    date: "Jul 01, 2025",
+    content:
+      "Love how easy it is to explore Meirunas's projects. The site flows naturally, and the tech stack is clearly presented. A solid example of Vue + Tailwind work.",
+  },
+  {
+    img: TestimonialImg05,
+    name: "Ellie Tran",
+    username: "@ellietran",
+    date: "Jun 23, 2025",
+    content:
+      "Really impressed by FRAME101. It's more than a portfolio — it shows professionalism and strong design sense. I bookmarked it as a reference for my own.",
+  },
+];
+
 
   return (
     <section className="relative before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:h-[120%] before:bg-linear-to-b before:from-gray-100">
@@ -50,7 +57,7 @@ export default function TestimonialsCarousel() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
-              Top startups love Simple
+             Trusted by Learners & Builders
             </h2>
           </div>
         </div>
